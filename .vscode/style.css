@@ -34,7 +34,7 @@ body {
   background-size: cover; tem como simplificar colocando tudo num único background
   */
   background: var(--bg-url) no-repeat center/cover;
-  text-align: center;
+  height: 100vh;
 }
 
 #container {
@@ -151,4 +151,15 @@ footer {
   padding: 24px 0px;
   font-size: 14px;
   justify-content: center;
+}
+
+/* media queries */
+
+@media (min-width:700px) {
+  :root{
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light{
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
